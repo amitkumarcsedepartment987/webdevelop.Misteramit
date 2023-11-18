@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MY PORTFOLIO</title>
+
+
+ 
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+	<style>
+div{height:100px ;
+	border-radius:1%;
+	
+
+}
+
+#a{background: blanchedalmond;
+border-radius:30px;
+}
+.bbbb{border-color:black;}
+
+.btn{background:red;
+color:black;
+position: absolute;
+right: 60px;
+top: 5px;}
+
+.form-control{
+width: 130px;
+position: absolute;
+right: 150px;
+top: 5px;}
+.ggg{background:yellow ;
+color:solidebrown;
+height: 50px;}
+a{padding:30px ;
+	color: darkred;
+	text-decoration: underline;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;}
+li{list-style: none;
+	display:inline-block;
+	overflow: auto;}
+center{color:black;}
+.skill-card {
+  margin-bottom: 1rem;
+  border: 1px solid #F0ECE3;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+  transition: 0.5s all ease;
+  cursor: pointer;
+}
+.skill-card:hover {
+    box-shadow: 5px 10px 12px black ;
+  border-color: #543210;
+}
+.skill-card:hover .card-img {
+  border-bottom-color: #000;
+}
+.skill-card .card-img {
+  padding: 20px;
+  border-bottom: 1px solid #F0ECE3;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  transition: 0.5s all ease;
+}
+
+.skill-card .card-img img {
+  margin: auto;
+  width: 100px;
+  height: auto;
+}
+.skill-card .card-body h4 {
+  color: #000;
+  font-size: 1rem;
+  text-align: center;
+}
+.gggg{background:salmon ;}
+
+hr{height: 3px;
+background:darkred;}
+
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 999px;
+  border: 3px solid orangered;
+}
+.main-timeline {
+    position: relative;
+
+   
+}
+
+.main-timeline:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 100%;
+    background: #c6c6c6;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0
+}
+
+.main-timeline .timeline {
+    margin-bottom: 40px;
+    position: relative
+}
+
+.main-timeline .timeline:after {
+    content: "";
+    display: block;
+    clear: both
+}
+
+.main-timeline .icon {
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin: auto;
+    position: absolute;
+    top: 10;
+    left: 0;
+    bottom: 0;
+    right: 0
+}
+
+.main-timeline .icon:before,
+.main-timeline .icon:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.33s ease-out 0s
+}
+
+.main-timeline .icon:before {
+    background: #fff;
+    border: 2px solid #232323;
+    left: -3px
+}
+
+.main-timeline .icon:after {
+    border: 2px solid #c6c6c6;
+    left: 3px
+}
+
+.main-timeline .timeline:hover .icon:before {
+    left: 3px
+}
+
+.main-timeline .timeline:hover .icon:after {
+    left: -3px
+}
+
+.main-timeline .date-content {
+    width: 50%;
+    float: left;
+    margin-top: 22px;
+    position: relative
+}
+
+.main-timeline .date-content:before {
+    content: "";
+    width: 36.5%;
+    height: 2px;
+    background: #c6c6c6;
+    margin: auto 0;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    bottom: 0
+}
+
+.main-timeline .date-outer {
+    width: 125px;
+    height: 125px;
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+    z-index: 1
+}
+
+.main-timeline .date-outer:before,
+.main-timeline .date-outer:after {
+    content: "";
+    width: 125px;
+    height: 125px;
+    margin: 0 auto;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.33s ease-out 0s
+}
+
+.main-timeline .date-outer:before {
+    background: #fff;
+    border: 2px solid #232323;
+    left: -6px
+}
+
+.main-timeline .date-outer:after {
+    border: 2px solid #c6c6c6;
+    left: 6px
+}
+
+.main-timeline .timeline:hover .date-outer:before {
+    left: 6px
+}
+
+.main-timeline .timeline:hover .date-outer:after {
+    left: -6px
+}
+
+.main-timeline .date {
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 27%;
+    left: 0
+}
+
+.main-timeline .month {
+    font-size: 18px;
+    font-weight: 700
+}
+
+.main-timeline .year {
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    color: #232323;
+    line-height: 36px
+}
+
+.main-timeline .timeline-content {
+    width: 50%;
+    padding: 20px 0 20px 50px;
+    float: right
+
+}
+
+.main-timeline .title {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 10 10 20px 
+}
+
+.main-timeline .description {
+    margin-bottom: 0
+}
+
+.main-timeline .timeline:nth-child(2n) .date-content {
+    float: right
+}
+
+.main-timeline .timeline:nth-child(2n) .date-content:before {
+    left: 10px
+}
+
+.main-timeline .timeline:nth-child(2n) .timeline-content {
+    padding: 20px 50px 20px 0;
+    text-align: right
+}
+
+@media only screen and (max-width: 991px) {
+    .main-timeline .date-content {
+        margin-top: 35px
+    }
+    .main-timeline .date-content:before {
+        width: 22.5%
+    }
+    .main-timeline .timeline-content {
+        padding: 10px 0 10px 30px
+    }
+    .main-timeline .title {
+        font-size: 17px
+    }
+    .main-timeline .timeline:nth-child(2n) .timeline-content {
+        padding: 10px 30px 10px 0
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .main-timeline:before {
+        margin: 0;
+        left: 7px
+    }
+    .main-timeline .timeline {
+        margin-bottom: 20px
+    }
+    .main-timeline .timeline:last-child {
+        margin-bottom: 0
+    }
+    .main-timeline .icon {
+        margin: auto 0
+    }
+    .main-timeline .date-content {
+        width: 95%;
+        float: right;
+        margin-top: 0
+    }
+    .main-timeline .date-content:before {
+        display: none
+    }
+    .main-timeline .date-outer {
+        width: 110px;
+        height: 110px
+    }
+    .main-timeline .date-outer:before,
+    .main-timeline .date-outer:after {
+        width: 110px;
+        height: 110px
+    }
+    .main-timeline .date {
+        top: 30%
+    }
+    .main-timeline .year {
+        font-size: 24px
+    }
+    .main-timeline .timeline-content,
+    .main-timeline .timeline:nth-child(2n) .timeline-content {
+        width: 95%;
+        text-align: center;
+        padding: 10px 0
+    }
+    .main-timeline .title {
+        margin-bottom: 10px
+    }
+}
+
+	</style>
+
+</head>
+
+<body >
+	<div class="container">
+		<div class="row">
+			<div class= "gggg container col-md-12 " style="height:3250px ;">
+<div class="navbar navbar-expand-lg navbar-light bg-warning ">
+  <a class="navbar-brand" href="#"><u>MY PORTFOLIO</u></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://about.me/amitkumarkh01.1.2006
+">ABOUT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
+      </li>
+       <li class="nav-item"><a class="nav-link" href="C:\Users\Dell\OneDrive\Desktop\Amit's Resume (1).pdf">MY RESUME</a></li>
+       <li class="nav-item"> <a class="nav-link
+       	" href="https://www.youtube.com/@indiafreestudy6287"> YOUTUBE LINK </a></li>
+         <li class="nav-item"> <a class="nav-link
+        " href="https://instagram.com/misteramitcsedepartment6287?utm_source=qr&igshid=OG"> INSTAGRAM</a></li>
+         <li class="nav-item"> <a class="nav-link
+        " href="https://linkedin.com/in/amit-kumar-bb8088296?fromQR=1">LINKEDIN</a></li>
+         
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown link
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">HOME</a>
+          <a class="dropdown-item" href="https://about.me/amitkumarkh01.1.2006
+">ABOUT</a>
+          <a class="dropdown-item" href="C:\Users\Dell\OneDrive\Desktop\Amit's Resume (1).pdf">MY RESUME</a>
+          <a class="dropdown-item" href="portfolio.html">PORTFOLIO</a>
+          
+             <a class="dropdown-item" href="https://www.youtube.com/@indiafreestudy6287">YOUTUBE LINK </a>
+             <a class="dropdown-item" href="https://instagram.com/misteramitcsedepartment6287?utm_source=qr&igshid=OG">INSTAGRAM </a>
+           <a class="dropdown-item" href="https://linkedin.com/in/amit-kumar-bb8088296?fromQR=1
+"> LINKEDIN</a>
+           
+        </div>
+      </li>
+    </ul>
+  </div>"
+    <b><input class="form-control mr-sm-4" type="search" placeholder="SEARCH-ME" aria-label="Search" ></b>
+      <button  class="btn btn-outline-sucess my-2 my-sm-0 " type="submit"><b>HIRE ME<b></button>
+    </form>
+  </div>
+
+<br>
+<div class="row container"style="height:300px;"style="width:100%;">
+<div class="col-md-6 "><center><br>
+  <h3><b> HEY ! I AM</h3><h1> AMIT KUMAR</b> </h1>
+  <h5><i>
+ A WEB DESIGNER (FRONT END DEVELOPER) ! </i><br>
+MATHEMATICS , SCIENCE & TECHNOLOGY ENTHUSIAST !<br> CSE ENGINEER ! <br> SOFTWARE ENGINEER ! 
+  </h5>
+  <button class="ggg btn-outline-secondary my-2 my-sm-0 " type="submit"><b>CONTACT ME</b></button>
+</center>
+</div>  
+
+<div class="col-md-6 ">
+  <img src=
+"C:\Users\Dell\OneDrive\Pictures\Screenshots\Screenshot 2023-11-14 192913.png"width="550px" height="300px">
+</div>
+</div>   <br><hr></hr>
+
+<div class="bbbb col-md-12"style="height: 250px;"style="width:100%;">
+
+<h2><u>......-ABOUT ME</u></h2><center><br>
+<h5><i> I AM A PROFESSIONAL FRONT END DEVELOPER . <br>NOW I PURSUING DIPLOMA IN COMPUTER SCIENCE FROM GOVERNMENT POLYTECHNIC<br> GULZARBAGH,PATNA (800007) .
+I ALSO LIKED TEACHING<br> IN SCIENCE ,MATHEMATICS , AND TECHNOLOGY .LIFE IS A GAME AND EDUCATION IS MY WEPPONS,<br>WIN THIS GAME TO REACH ON YOUR AIM.</i></h5></center><hr></hr>
+</div>
+
+<div class="row container"style="width:100%;">
+ 
+ <center><h1><b><u>MY SKILLS </u></b></h1></center><br><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-6 col-md-3">
+    <div class="card skill-card">
+      <div class="card-img">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/640px-HTML5_logo_and_wordmark.svg.png" alt="" class="img-fluid">
+      </div>
+      <div class="card-body">
+        <h4>HTML</h4>
+      </div>
+    </div>
+  </div>
+    <div class="col-6 col-md-3">
+    <div class="card skill-card">
+      <div class="card-img">
+        <img src="C:\Users\Dell\OneDrive\Desktop\css.png" alt="" class="img-fluid">
+      </div>
+      <div class="card-body"><br><br>
+        <h4>CSS </h4>
+      </div>
+    </div>
+  </div>
+    <div class="col-6 col-md-3">
+    <div class="card skill-card">
+      <div class="card-img">
+        <img src="C:\Users\Dell\OneDrive\Desktop\javascript.png" alt="" class="img-fluid">
+      </div>
+      <div class="card-body"><br>
+        <h4>JAVASCRIPT</h4>
+      </div>
+    </div>
+  </div>
+    <div class="col-6 col-md-3">
+    <div class="card skill-card">
+      <div class="card-img">
+        <img src= "C:\Users\Dell\OneDrive\Desktop\logobootstrap.png"alt="" class="img-fluid">
+      </div>
+      <div class="card-body">
+        <h4>BOOTSTRAP</h4>
+      </div>
+    </div>
+  </div>
+   <div class="mt-4"></div>
+<div class="container">
+  <div class="row">
+    <div class="col-6 col-md-3">
+    <div class="card skill-card">
+      <div class="card-img">
+        <img src="C:\Users\Dell\OneDrive\Desktop\git.png" alt="" class="img-fluid">
+      </div>
+      <div class="card-body"><br>
+        <h4>git & git APK</h4>
+      </div>
+    </div>
+  </div>
+    <div class="col-6 col-md-3">
+    <div class="card skill-card">
+      <div class="card-img">
+        <img src="C:\Users\Dell\OneDrive\Desktop\github.png" alt="" class="img-fluid">
+      </div>
+      <div class="card-body"><br>
+        <h4>github & website</h4>
+      </div>
+    </div>
+  </div>
+      <div class="col-6 col-md-3">
+    <div class="card skill-card">
+      <div class="card-img">
+        <img src= "C:\Users\Dell\OneDrive\Desktop\mathematics.jpg"alt="" class="img-fluid">
+      </div>
+      <div class="card-body">
+        <h4>MATHEMATICS</h4>
+      </div>
+    </div>
+  </div>
+      <div class="col-6 col-md-3">
+    <div class="card skill-card">
+      <div class="card-img">
+        <img src="C:\Users\Dell\OneDrive\Desktop\soft2.png" alt="" class="img-fluid">
+      </div>
+      <div class="card-body">
+        <h4>SOFTWARE<br>ENGINEERING</h4>
+      </div>
+  </div>
+</div>
+  
+ </div>
+</div>
+
+   <div class="mdb-lightbox">  <div id="mdb-lightbox-ui"></div><br>
+   <center><h1><b><u>MY PROJECTS</u></b></h1></center><br>
+<center>
+  <div class="container ">
+  <div class="row">
+ 
+      <figure class="col-md-4 ">
+         <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(150).webp" data-size="1600x2000">
+          <a href="flipkartask.html"><img alt="picture" src="C:\Users\Dell\OneDrive\Pictures\Screenshots\Screenshot 2023-11-15 215542.png" class="img-fluid" >
+          </a>
+      </figure>
+
+      <figure class="col-md-4">
+        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(150).webp" data-size="1600x2000">
+          <a href="gppgulzaarbagh.html"><img alt="picture" src="C:\Users\Dell\OneDrive\Pictures\Screenshots\Screenshot 2023-11-15 221200.png" class="img-fluid" >
+        </a>
+      </figure>
+
+      <figure class="col-md-4">
+        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(152).webp" data-size="1200x1200">
+        <a href="responsive.html">  <img alt="picture" src="C:\Users\Dell\OneDrive\Pictures\Screenshots\Screenshot 2023-11-15 222025.png"width="300px"height="300px" class="img-fluid" />
+        </a>
+      </figure></div></div><div class="mt-5"></div>
+<div class="container">
+  <div class="row">
+      <figure class="col-md-4">
+        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(42).webp" data-size="1200x1600">
+        <a href="services.html">   <img alt="picture" src="C:\Users\Dell\OneDrive\Pictures\Screenshots\Screenshot 2023-11-15 222904.png" class="img-fluid" >
+        </a>
+      </figure>
+
+      <figure class="col-md-4">
+        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(42).webp" data-size="1200x1600">
+       <a href="task6666.html"> <img alt="picture" src="C:\Users\Dell\OneDrive\Pictures\Screenshots\Screenshot 2023-11-15 230453.png" class="img-fluid" >
+        </a>
+      </figure>
+
+      <figure class="col-md-4">
+        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(148).webp" data-size="1200x1200">
+         <a href="practice 06.html">  <img alt="picture" src="C:\Users\Dell\OneDrive\Pictures\Screenshots\Screenshot 2023-11-16 203958.png"width="300px"height="300px"class="img-fluid" />
+        </a>
+      </figure></div></div><div class="mt-5"></div>
+<div class="container">
+  <div class="row">
+      <figure class="col-md-4">
+        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(148).webp" data-size="1600x2000">
+        <a href="portfolio.html">   <img alt="picture" src="C:\Users\Dell\OneDrive\Pictures\Screenshots\Screenshot 2023-11-16 205234.png" class="img-fluid" />
+        </a>
+      </figure>
+
+      <figure class="col-md-4">
+        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(147).webp" data-size="1600x2000">
+        <a href="task5.html">   <img alt="picture" src="C:\Users\Dell\OneDrive\Pictures\Screenshots\Screenshot 2023-11-16 210648.png" class="img-fluid" />
+        </a>
+      </figure>
+
+      <figure class="col-md-4">
+        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(149).webp" data-size="1600x2000">
+        <a href="task4.html">   <img alt="picture" src="C:\Users\Dell\Documents\WhatsApp Image 2023-10-28 at 12.10.10_ce0cb595.jpg" width="300px"height="280px">
+        </a>
+      </figure></div>
+     
+ </center>
+    
+
+<br><br><br><br>
+<br><br><br><br>
+<center>  <button class="ZZZZZ container bg-primary" type="submit" style="width:100px;"style="height:40px;"style="width:100px;"><b>VIEW MORE</b></button></center>
+<div class="container mt-0">
+<div class="main-timeline">
+<h1><b><u>MY EXPERIENCE</u></b></h1><br>
+
+                        <!-- start experience section--><br><br>
+                        <div class="timeline">
+                            <div class="icon"></div>
+                            <div class="date-content">
+                                <div class="date-outer">
+                                    <span class="date">
+                                            <span class="month">2 Years</span>
+                                    <span class="year">2020-22</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="timeline-content">
+                                <h5 class="title"><U>INTERMEDIATE OF SCIENCE & MATHEMATICS</U></h5>
+                                <p class="description">
+                                    I COMPLETED I.SC IN MATHEMATICS STREAM FROM SACHIDANAND SINHA COLLEGE AURANGABAD,BIHAR.IT IS A NICE PLACE FOR COMPLETED ISC.IT IS GRADE A COLLEGE IN BIHAR.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- end experience section-->
+ <!-- start experience section--><br><br>
+                        <div class="timeline">
+                            <div class="icon"></div>
+                            <div class="date-content">
+                                <div class="date-outer">
+                                    <span class="date">
+                                            <span class="month">3 MONTH</span>
+                                    <span class="year">2022</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="timeline-content">
+                                <h5 class="title"><U>KUSHAL YUVA PROGRAM</U></h5>
+                                <p class="description">
+                                    I COMPLETED KYP IN BSCIT,BSCSS,BSCLS  FROM BIHAR SKILL DEVELOPMENT MISSION (BSDM) DRCC, AURANGABAD,BIHAR.IN 3 MONTH WE LEARN LANGUAGE SKILLS,SOFT SKILLS,& IT SKILLS.THIS COURSE MUST DO EVERY STUDENTS BECAUSE HERE WE LEARN NEW THINKS WITH THEORY+PRACTICAL.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- end experience section-->
+                        <!-- start experience section--><br><br>
+                        <div class="timeline">
+                            <div class="icon"></div>
+                            <div class="date-content">
+                                <div class="date-outer">
+                                    <span class="date">
+                                            <span class="month">1 Years</span>
+                                    <span class="year">2020</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="timeline-content">
+                                <h5 class="title">MATRICULATION</h5>
+                                <p class="description">
+                                   I SUCCESSFULLY COMPLETED MATRIC FROM BSEB PATNA .I PASSED 10TH WITH 85% MARKS IN SCIENCE ,SOCIAL SCIENCE,MATH,HINDI,ENGLISH,&SANSKRIT SUBJECT.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- end experience section-->
+
+                        <!-- start experience section--><br><br>
+                        <div class="timeline">
+                            <div class="icon"></div>
+                            <div class="date-content">
+                                <div class="date-outer">
+                                    <span class="date">
+                                            <span class="month">3 Years</span>
+                                    <span class="year">2022-25</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="timeline-content">
+                                <h5 class="title"><U>CSE ENGINEERING FULL TIME</U></h5>
+                                <p class="description">
+                                    NOW I PURSUING DIPLOMA IN COMPUTER SCIENCE AND ENGINEERING FROM GOVERNMENT POLYTECHNIC COLLEGE GULZARBAGH ,PATNA (800007).THIS IS NICE GRADE A COLLEGE FOR LEARNING SOFTWARE + HARWARE ENGINEERING.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- end experience section-->
+
+                        <!-- start experience section--><br><br>
+                        <div class="timeline">
+                            <div class="icon"></div>
+                            <div class="date-content">
+                                <div class="date-outer">
+                                    <span class="date">
+                                            <span class="month">1 MONTH</span>
+                                    <span class="year">2023</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="timeline-content">
+                                <h5 class="title"><U>WEB DESIGNER(FRONT END DEVELOPMENT+BACKEND)</U></h5>
+                                <p class="description">
+                                    I COMPLETED INTERNSHIP OF WEB DEVELOPMENT FROM KHABAI TECH PRIVATE LIMITED COMPANY.HERE WE EXPERIENCED NICE CLIMATE TO LEARN OF WEB DEVELOPMENT & DESIGNING.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- end experience section-->
+
+</div>
+
+</div>
+
+    </div>
+
+  </div>
+
+  </div>
+</div>
+
+</div>
+<div class="container bg-secondary"style="width:100%;"style="height:30%;">
+<div class="row">
+<div class="col-md-12" >
+       <div class="col-md-6">          
+<br>
+<h1><b><u>------TESTINOMIAL</u></b></h1><br>
+<h5>The design quality,flexibility,documentation and supports are all absolutely excellent .<br>I buy the avada theme for all my clients , knowing that whatever they require ,avada will be able to deliver.</h5><br>
+<h3><u><i>AMIT KUMAR SAHU</i></u></h3>
+<h6>--CEO,MACD PRIVATE LTD. COMPANY</h6>
+</div>
+<div class="col-md-6 ">  
+
+<img src="">
+
+  </div>
+</div>
+
+  </div>
+</div>
+</div>
+
+</body>
+</html>
